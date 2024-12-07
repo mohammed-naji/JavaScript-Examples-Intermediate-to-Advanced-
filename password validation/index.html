@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <form action="">
+            <div>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <input type="password" placeholder="Password">
+                <ul>
+                    <li class="passlen">
+                        Password must be at least 8 characters
+                    </li>
+                    <li class="passsmall">
+                        Password must have small character
+                    </li>
+                    <li class="passcapital">
+                        Password must have capital character
+                    </li>
+                    <li class="passspecial">
+                        Password must have special character
+                    </li>
+                    <li class="passdigits">
+                        Password must have digits
+                    </li>
+                </ul>
+            </div>
+            <button class="btn" disabled>Send</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
