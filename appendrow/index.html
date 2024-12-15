@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Row</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="max-w-5xl mx-auto mt-10">
+        <div class="relative">
+            <h1 class="text-xl mb-2">Add Students</h1>
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                    <tr>
+                        <th scope="col" class="px-4 py-3 border">
+                            Name
+                        </th>
+                        <th scope="col" class="px-4 py-3 border">
+                            Email
+                        </th>
+                        <th scope="col" class="px-4 py-3 border">
+                            Age
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white relative group">
+                        <td class="px-2 py-2 border">
+                            <input type="text" class="block border rounded-none outline-none w-full px-3 py-2"
+                                placeholder="Name..">
+                        </td>
+                        <td class="px-1 py-1 border">
+                            <input type="text" class="block border rounded-none outline-none w-full px-3 py-2"
+                                placeholder="Email..">
+                        </td>
+                        <td class="px-1 py-1 border">
+                            <input type="text" class="block border rounded-none outline-none w-full px-3 py-2"
+                                placeholder="Age..">
+                        </td>
+                        <td class="px-3 py-1 absolute top-3 opacity-0 group-hover:opacity-100 duration-300">
+                            <i onclick="delete_row(event)"
+                                class="delete fas fa-times text-red-400 text-xl cursor-pointer"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="add-row bg-blue-500 text-white hover:bg-blue-400 duration-300 px-3 py-2 mt-1"><i
+                    class="fas fa-plus"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
