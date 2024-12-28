@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 50px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+table th {
+    background-color: #148ee0;
+    color: #fff;
+    text-align: left;
+}
+
+table button {
+    border: 0;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+.edit {
+    background-color: #1db443;
+    color: #fff;
+}
+
+.done {
+    background-color: #0b95d5;
+    color: #fff;
+}
+
+.delete {
+    background-color: #ff2c5d;
+    color: #fff;
+}
