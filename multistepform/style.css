@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(138deg, rgb(250, 233, 233) 0%, rgba(228, 250, 255, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.multistep {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: var(0 0 #0000, 0 0 #0000), var(0 0 #0000, 0 0 #0000), var(0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1));
+    width: 35%;
+}
+
+.multistep .step {
+    display: none;
+}
+
+.multistep .step.active {
+    display: block
+}
+
+.multistep .indicator ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.multistep .indicator ul li {
+    position: relative;
+    padding-bottom: 20px;
+    flex-grow: 1;
+    width: 33.3333%;
+    text-align: center;
+    color: #b8b8b8;
+}
+
+.multistep .indicator ul li.active {
+    color: #000;
+}
+
+.multistep .indicator ul li:not(:last-child):after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #dfdfdf;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+}
+
+.multistep .indicator ul li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #f1ddff;
+    border: 2px solid #dfdfdf;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 5px);
+    border-radius: 50%;
+    z-index: 6;
+}
+
+.multistep .indicator ul li.active:after {
+    background-color: #ca81ff;
+}
+
+.multistep .indicator ul li.active:before {
+    background-color: #a11eff;
+    border: 2px solid #ca81ff;
+}
+
+.multistep .step input {
+    display: block;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: 0;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+.multistep .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.multistep .buttons button {
+    display: block;
+    width: 50%;
+    flex-grow: 1;
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.multistep .buttons button#next {
+    background-color: #5e00a0;
+    color: #fff;
+}
