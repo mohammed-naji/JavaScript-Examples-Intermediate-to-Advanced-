@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <h2> بامكانكم انشاء رسالة توصية من خلال تعبئة هذا النوذج </h2>
+            <form id="generate-form" action="">
+                <div>
+                    <label>اللغة</label> <br>
+                    <label><input type="radio" required name="lang" value="en"> إنجليزي</label> <br>
+                    <label><input type="radio" required name="lang" value="ar"> عربي</label>
+                </div>
+                <div>
+                    <label>الجنس</label> <br>
+                    <label><input type="radio" required name="gender" value="male"> ذكر</label> <br>
+                    <label><input type="radio" required name="gender" value="female"> انثى</label>
+                </div>
+                <div>
+                    <label for="full_name">الإسم بالكامل</label>
+                    <input required type="text" id="full_name">
+                </div>
+
+                <div>
+                    <label for="university">الجامعة المخاطبة</label>
+                    <input required type="text" id="university">
+                </div>
+                <div>
+                    <label for="specialization">التخصص</label>
+                    <input required type="text" id="specialization">
+                </div>
+                <button>إنشاء</button>
+            </form>
+        </div>
+
+        <div class="letter-en none" dir="ltr">
+            <button class="print" onclick="print()">طباعة</button>
+            <p>Dear Members of the Scholarship Committee in <span class="uni"></span>,</p>
+            <p>Subject: Recommendation for <span class="full_name"></span></p>
+            <div class="content">
+                <div class="female none">
+                    <p>It is my pleasure to provide my sincere recommendation for Ms. <span class="full_name"></span>
+                        for the
+                        scholarship
+                        you are offering. I have had the privilege of working closely with <span
+                            class="full_name"></span> during university studying, and I can confidently attest to their
+                        academic and professional
+                        excellence.</p>
+
+                    <p><span class="full_name"></span> possesses exceptional qualities that make them highly deserving
+                        of this
+                        scholarship.
+                        They demonstrate a remarkable ability for analytical and critical thinking, along with a strong
+                        commitment to achieving excellence in all their endeavors. During their time working with me,
+                        they
+                        showed great dedication to study and commitment.</p>
+
+                    <p>I firmly believe that <span class="full_name"></span> will greatly benefit from this scholarship
+                        and will be a
+                        valuable
+                        addition to your academic community. I am confident that they will achieve significant success
+                        in
+                        the
+                        future and will make meaningful contributions to the field of <span class="sp"></span>.</p>
+                </div>
+                <div class="male none">
+                    <p>It is my pleasure to provide my sincere recommendation for Mr. <span class="full_name"></span>
+                        for the
+                        scholarship
+                        you are offering. I have had the privilege of working closely with <span
+                            class="full_name"></span> during university studying, and I can confidently attest to their
+                        academic and professional
+                        excellence.</p>
+
+                    <p><span class="full_name"></span> possesses exceptional qualities that make them highly deserving
+                        of this
+                        scholarship.
+                        They demonstrate a remarkable ability for analytical and critical thinking, along with a strong
+                        commitment to achieving excellence in all their endeavors. During their time working with me,
+                        they
+                        showed great dedication to study and commitment.</p>
+
+                    <p>I firmly believe that <span class="full_name"></span> will greatly benefit from this scholarship
+                        and will be a
+                        valuable
+                        addition to your academic community. I am confident that they will achieve significant success
+                        in
+                        the
+                        future and will make meaningful contributions to the field of <span class="sp"></span>.</p>
+                </div>
+
+                <p>With utmost respect,</p>
+                <p>Mohammed Naji Abu Alqumbuz</p>
+                <p>Lecturer</p>
+                <p>Alazhar University - Palestine</p>
+                <p>malqumbuz@gmail.com</p>
+                <p>00972592418889</p>
+            </div>
+            <div class="signature">
+                <img width="150" src="imgages/signature.png" alt="">
+            </div>
+        </div>
+
+        <div class="letter-ar none">
+            <button class="print" onclick="print()">طباعة</button>
+            <p>السادة المحترمون في لجنة المنح الدراسية في <span class="uni"></span>،</p>
+            <p>الموضوع: توصية ل <span class="full_name"></span></p>
+            <div class="content">
+                <div class="female none">
+                    <p>يطيب لي أن أقدم لكم توصيتي الصادقة الآنسة <span class="full_name"></span> للحصول على المنحة
+                        الدراسية
+                        التي
+                        تقدمونها. لقد عملت مع <span class="full_name"></span> عن كثب خلال التدريس الجامعي، وأستطيع أن
+                        أشهد على تميزها الأكاديمي والمهني.</p>
+
+                    <p><span class="full_name"></span> تتمتع بصفات استثنائية تجعلها جديرة بهذه المنحة.
+                        هي
+                        تمتلك قدرة عالية على التحليل والتفكير النقدي، بالإضافة إلى التزامها الكبير بتحقيق التميز
+                        في
+                        كل ما تقوم به. خلال فترة دراستها معي، أظهرت تفانيًا كبيرًا في الدراسة والالتزام.</p>
+
+                    <p>أعتقد جازمًا أن <span class="full_name"></span> ستستفيد استفادة كبيرة من هذه المنحة، وستكون
+                        إضافة قوية
+                        لمجتمعكم الأكاديمي. أنا على ثقة تامة أنها ستحقق نجاحات كبيرة في المستقبل،
+                        وستساهم
+                        بشكل إيجابي في مجال <span class="sp"></span>.</p>
+                </div>
+                <div class="male none">
+                    <p>يطيب لي أن أقدم لكم توصيتي الصادقة للسيد <span class="full_name"></span> للحصول على المنحة
+                        الدراسية
+                        التي
+                        تقدمونها. لقد عملت مع <span class="full_name"></span> عن كثب خلال التدريس الجامعي، وأستطيع أن
+                        أشهد على تميزه الأكاديمي والمهني.</p>
+
+                    <p><span class="full_name"></span> يتمتع بصفات استثنائية تجعله جديرًا بهذه المنحة.
+                        فهو
+                        يمتلك قدرة عالية على التحليل والتفكير النقدي، بالإضافة إلى التزامه الكبير بتحقيق التميز
+                        في
+                        كل ما يقوم به. خلال فترة عمله معي، أظهر تفانيًا كبيرًا في الدراسة والالتزام.</p>
+
+                    <p>أعتقد جازمًا أن <span class="full_name"></span> سيستفيد استفادة كبيرة من هذه المنحة، وسيكون
+                        إضافة قوية
+                        لمجتمعكم الأكاديمي. أنا على ثقة تامة بأنه سيحقق نجاحات كبيرة في المستقبل،
+                        وسيساهم
+                        بشكل إيجابي في مجال <span class="sp"></span>.</p>
+                </div>
+
+                <p>بكل تقدير،</p>
+                <p>محمد ناجي ابو القمبز</p>
+                <p>محاضر جامعي</p>
+                <p>جامعة الازهر - فلسطين</p>
+                <p>malqumbuz@gmail.com</p>
+                <p>00972592418889</p>
+            </div>
+            <div class="signature">
+                <img width="150" src="imgages/signature.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
